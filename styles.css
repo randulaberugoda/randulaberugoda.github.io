@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('backgrond.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+}
+/* Nav bar */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #274C77;
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1000; /* Increased z-index */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white; /* Adjust text color as needed */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight:lighter;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: black; /* Slightly transparent white on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+}
+
+.logo {
+    max-width: 200px; /* Set a maximum width for the logo */
+}
+
+.logo img {
+    width: 35%;
+    height: auto;
+    display: block; 
+}
+/*hr*/
+hr.hr {
+  border: 2px solid #274C77;
+width: 80%;
+	border-radius: 10px;}
+
+/* Randula Berugoda */
+
+.randulaBerugoda{
+	position: absolute;
+	top: 23%;
+	left: 26%;
+	color: #274C77;
+	font-weight: bolder;
+	font-size: 50px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	letter-spacing: 14px;
+}
+
+
+.rbai {
+  display: flex;
+  align-items: center;
+}
+
+.rbai img {
+  width: 25%;
+  height: auto;
+  border: 0px solid #274C77;
+  border-radius: 50%;
+  margin-right: 1%;
+	position: absolute;
+	top: 30%;
+	left:3%;
+}
+
+
+
+
+/*animation*/
+
+#animator {
+  color:black;
+  text-transform: uppercase;
+  font-size:25px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:absolute;
+top: 7%;
+	left: 32%;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;border-radius: 8px;
+}
+#flip div:first-child div {
+  background:#4ec7f3;border-radius: 8px;
+}
+#flip div:last-child div {
+  background:#DC143C;border-radius: 8px;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p1 {
+	color:black;
+	font-size: 15px;
+	font-weight:lighter;
+}
+
+
+
+
+
+section {
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:rgba(0, 0, 0, 0);
+  box-shadow: 0 0 10px #274C77;
+  border-radius: 8px;
+	border-color: white;
+		position: absolute;
+	top: 52%;
+	left:34%;
+	text-align: left;
+	font-weight:530;
+}
+
+
+/*Footer */
+
+.footerposition{
+	position: absolute;
+	top: 105%;
+	width: 100%;
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer{
+background:#274C77;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:white;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:white;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:black;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
+
+
+
+.codeX{
+  width: auto;
+  height: 80%;
+  border: 0px solid white;
+  border-radius: 50%;
+  margin-right: 1%;
+	position: absolute;
+	top: 15%;
+	left:3%;	
+}
+
