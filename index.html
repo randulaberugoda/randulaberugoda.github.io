@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Desired+Font&display=swap">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="cv.pdf" download="cv.pdf">My CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2></h2>
+            <container class="randulaBerugoda">RANDULA BERUGODA<br><hr class="hr"></container>    
+            <div class="about-content">
+                <img src="rbai.jpg" alt="randula">
+                <p>Hi !!!..<br>I'm an Undergraduate student at SLIIT City Uni faculty of Computing.<br><br>Feel free to explore my portfolio to learn more about my projects and experiences.<br><br>I am always open to new opportunities and collaborations that allow me to expand my knowledge.<br><br>Thank you for visiting, and I look forward to connecting with fellow enthusiasts, learners, and industry professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education"> 
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <img src="sliit.png" alt="University Logo 1">
+                <div class="edu-description">
+                    <h3>SLIIT City Uni</h3>
+                    <p>Reading for B.Sc. (Hons) Computer Science and Software Engineering</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <img src="esoft.jpg" alt="University Logo 2">
+                <div class="edu-description">
+                    <h3>ESoft Metro Campus</h3>
+                    <p>Diploma in Information Technology</p>
+                </div>
+            </div>            
+            <div class="education-item">
+                <img src="kcc.jpg" alt="University Logo 3">
+                <div class="edu-description">
+                    <h3>C.W.W.Kannangara Central College</h3>
+                    <p>Studied upto G.C.E. Advanced Level (Physical Science stream)</p>
+                </div>
+            </div>
+    </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="../Portfolio/security.jpg" alt="Project 1">
+                    <div class="project-details">
+                        <h3>Vulnarability Report</h3>
+                        <p>Security Vulnarability Report that done in food city</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../Portfolio/ps.jpg" alt="Project 2">
+                    <div class="project-details">
+                        <h3>Project 2</h3>
+                        <p>Description of Project 2</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../Portfolio/Khan.jpg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Project 3</h3>
+                        <p>Description of Project 3</p>
+                    </div>
+                </div>
+				<a href="https://github.com/randulaberugoda" class="github-button">View More on GitHub</a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Reach Me</h2>
+			 <a href="contact.php" class="contact-button">Contact Me</a><br><br>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <a href="https://github.com/randulaberugoda" target="_blank"><i class="fa fa-github"> </i></a>
+                <a href="https://www.linkedin.com/in/randula-berugoda-487789282" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100009059867026&mibextid=gik2fB" target="_blank"><i class="fa fa-facebook"></i></a>   
+            </div><br>
+            <div class="copy"><p>Copyright © 2024 Randula Berugoda. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+ document.addEventListener("DOMContentLoaded", function() {
+    const educationItems = document.querySelectorAll(".education-item");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            } else {
+                entry.target.classList.remove("visible"); 
+            }
+        });
+    });
+    educationItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+
+    </script>
+</body>
+</html>
