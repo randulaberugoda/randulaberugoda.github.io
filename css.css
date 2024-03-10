@@ -298,6 +298,6 @@ html {
 }
 @media only screen and (max-width: 600px) {
   .contact-button {
-    left: 15%; /* Adjust the percentage value to move the button left or right */
+    left: 25%; /* Adjust the percentage value to move the button left or right */
   }
 }
