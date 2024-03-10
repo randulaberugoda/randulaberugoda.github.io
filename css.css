@@ -296,3 +296,8 @@ html {
     transform: translateX(0);
   }
 }
+@media only screen and (max-width: 600px) {
+  .contact-button {
+    left: 15%; /* Adjust the percentage value to move the button left or right */
+  }
+}
