@@ -65,21 +65,21 @@
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="project">
-                    <img src="security.jpg" alt="Project 1">
+                    <img src="../Portfolio/security.jpg" alt="Project 1">
                     <div class="project-details">
                         <h3>Vulnarability Report</h3>
                         <p>Security Vulnarability Report that done in food city</p>
                     </div>
                 </div>
                 <div class="project">
-                    <img src="ps.jpg" alt="Project 2">
+                    <img src="../Portfolio/ps.jpg" alt="Project 2">
                     <div class="project-details">
                         <h3>Project 2</h3>
                         <p>Description of Project 2</p>
                     </div>
                 </div>
                 <div class="project">
-                    <img src="Khan.jpg" alt="Project 3">
+                    <img src="../Portfolio/Khan.jpg" alt="Project 3">
                     <div class="project-details">
                         <h3>Project 3</h3>
                         <p>Description of Project 3</p>
@@ -129,5 +129,18 @@
 
 
     </script>
+	<script>
+  window.addEventListener('resize', function() {
+    var paragraph = document.querySelector('.about-content p');
+    if (window.innerWidth <= 600) {
+      paragraph.innerHTML = "Hi!!!..<br>I'm an Undergraduate student at SLIIT City Uni faculty of Computing.<br><br>Feel free to explore my portfolio to learn more about my projects and experiences.<br><br>Thank you for visiting.";
+    } else {
+      paragraph.innerHTML = "Hi !!!..<br>I'm an Undergraduate student at SLIIT City Uni faculty of Computing.<br><br>Feel free to explore my portfolio to learn more about my projects and experiences.<br><br>I am always open to new opportunities and collaborations that allow me to expand my knowledge.<br><br>Thank you for visiting, and I look forward to connecting with fellow enthusiasts, learners, and industry professionals.";
+    }
+  });
+
+  // Run the function once on page load to set the initial content
+  window.dispatchEvent(new Event('resize'));
+</script>
 </body>
 </html>
