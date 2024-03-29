@@ -323,3 +323,16 @@ html {
     left: 31%; 
   }
 }
+
+
+#icons {
+    display: flex;
+    justify-content: center; 
+}
+
+.material-symbols-outlined {
+    font-size: 70px;
+    color: #808080; 
+    margin-right: 20px;
+}
+
