@@ -335,4 +335,13 @@ html {
     color: #808080; 
     margin-right: 20px;
 }
+@media only screen and (max-width: 768px) {
+    .material-symbols-outlined {
+        font-size: 40px; 
+        margin-right: 10px; 
+    }
+}
 
+
+#h3,#h4 ,#h5, #h6{
+    color:  #274C77;}
