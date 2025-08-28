@@ -1,170 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Desired+Font&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randula Berugoda - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="cv.pdf" download="cv.pdf">My CV</a></li>
-                </ul>
-            </nav>
+  <div class="background">
+    <!-- Gradient patches -->
+    <div class="gradient-patch" style="top: 17%; left: 30%;"></div>
+    <div class="gradient-patch" style="top: 53%; left: 50%;"></div>
+
+    <div class="gradient-patch2" style="top: 25%; left: 10%;"></div>
+    <div class="gradient-patch2" style="top: 60%; left: 75%;"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="cv.pdf" download="cv.pdf">My CV</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="profile-photo">
+          <img src="rb.png" alt="Randula Berugoda" class="profile-img">
         </div>
-    </header>
-    
-    <section id="about">
-        <div class="container">
-            <h2></h2>
-            <container class="randulaBerugoda">RANDULA BERUGODA<br><hr class="hr"></container>    
-            <div class="about-content">
-                <img src="rbai.jpg" alt="randula">
-                <p>Hi !!!..<br>I'm an Undergraduate student at SLIIT City Uni faculty of Computing.<br><br>Feel free to explore my portfolio to learn more about my projects and experiences.<br><br>I am always open to new opportunities and collaborations that allow me to expand my knowledge.<br><br>Thank you for visiting, and I look forward to connecting with fellow enthusiasts, learners, and industry professionals.</p>
-            </div>
-        </div>
+        <h1>RANDULA BERUGODA</h1>
+        <p>
+          Hi !!! I'm an Undergraduate student at SLIIT City Uni faculty of Computing.
+          Feel free to explore my portfolio to learn more about my projects and experiences.
+          I am always open to new opportunities and collaborations that allow me to expand my knowledge.
+          Thank you for visiting, and I look forward to connecting with fellow enthusiasts, learners, and industry
+          professionals.
+        </p>
+      </div>
     </section>
 
-    <section id="education"> 
-        <div class="container">
-            <h2 id="h3">Education</h2>
-            <div class="education-item">
-                <img src="sliit.png" alt="University Logo 1">
-                <div class="edu-description">
-                    <h3>SLIIT City Uni</h3>
-                    <p>Reading for B.Sc. (Hons) Computer Science and Software Engineering</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <img src="esoft.jpg" alt="University Logo 2">
-                <div class="edu-description">
-                    <h3>ESoft Metro Campus</h3>
-                    <p>Diploma in Information Technology</p>
-                </div>
-            </div>            
-            <div class="education-item">
-                <img src="kcc.jpg" alt="University Logo 3">
-                <div class="edu-description">
-                    <h3>C.W.W.Kannangara Central College</h3>
-                    <p>Studied upto G.C.E. Advanced Level (Physical Science stream)</p>
-                </div>
-            </div>
+    <!-- Content Sections -->
+    <div class="content">
+      <!-- Education Section -->
+      <section class="section">
+        <h2><span class="section-emoji">🎓</span>Education</h2>
+        <div class="cards-container">
+          <div class="card">
+            <h3>SLIIT City University</h3>
+            <p><strong>B.Sc. (Hons) Computer Science and Software Engineering</strong></p>
+            <p>Faculty of Computing</p>
+            <p>Currently Reading</p>
+          </div>
+          <div class="card">
+            <h3>ESoft Metro Campus</h3>
+            <p><strong>Diploma in Information Technology</strong></p>
+            <p>Completed</p>
+          </div>
+          <div class="card">
+            <h3>C.W.W.Kannangara Central College</h3>
+            <p><strong>G.C.E. Advanced Level</strong></p>
+            <p>Physical Science Stream</p>
+            <p>Completed</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <h2><span class="section-emoji">🚀</span>Projects</h2>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Weather Forecast Application</h3>
+            <p>Weather App in React that fetches data from the Open Weather API</p>
+            <p>Technologies: React</p>
+          </div>
+          <div class="card">
+            <h3>E-Commerce WebSite</h3>
+            <p>Fully functional E-Commerce website featuring customer accounts,
+              an admin panel, and categorized advertisements.</p>
+            <p>Technologies: PHP, HTML, Javascript, MySQL</p>
+          </div>
+          <div class="card">
+            <h3>Security vulnerability Project</h3>
+            <p>Led a team to assess physical and network security vulnerabilities at Food City in Kottawa,
+              identifying weaknesses and recommending solutions to enhance surveillance, access control, and
+              cybersecurity measures.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section">
+        <h2><span class="section-emoji">⚡</span>Programming and IT Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <h4>HTML5</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <h4>CSS3</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-php"></i>
+            <h4>PHP</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <h4>Python</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-java"></i>
+            <h4>Java</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <h4>MySQL</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <h4>React</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <h4>Node.js</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <h4>Git</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <h4>VS Code</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-bootstrap"></i>
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-angular"></i>
+            <h4>Angular</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <h2>Let's Connect</h2><br>
+        <a href="ContactMe.html" class="contact-btn">Contact Me</a>
+      </section>
     </div>
-    </section>
-    
-    <section id="projects">
-        <div class="container">
-            <h2 id="h4">Projects</h2>
-            <div class="project-container">
-						<a href="SecurityReport.html">
-							<div class="project">
-								<div class="circle">
-									<img src="download.png" alt="Image">
-								</div>
-								<div class="project-details">
-									<h3 class="project-title">Security Vulnerability Report</h3>
-								</div>
-							</div>
-						</a>
-				
-						<a href="">
-							<div class="project">
-								<div class="circle">
-									<img src="student.png" alt="Image">
-								</div>
-								<div class="project-details">
-									<h3 class="project-title">Student Management System</h3>
-								</div>
-							</div>
-						</a>				
 
-						<a href="https://github.com/randulaberugoda/Super-Market-Management-System">
-							<div class="project">
-								<div class="circle">
-									<img src="supermarket.jpg" alt="Image">
-								</div>
-								<div class="project-details">
-									<h3 class="project-title">Super Market Management <br> System</h3>
-								</div>
-							</div>
-						</a>				
-								
-				<a href="https://github.com/randulaberugoda" class="github-button">View More on GitHub</a>
-            </div>
-        </div>
-    </section>
-	
-	 <section id="icons"> <div class="container">
-		 <h2 id="h5">Programming and IT Skills </h2>
-	<span class="material-symbols-outlined">html</span>
-	<span class="material-symbols-outlined">css</span>
-	<span class="material-symbols-outlined">php</span>
-	<span class="material-symbols-outlined">javascript</span>
-		 </div></section>
-
-    <section id="contact">
-        <div class="container">
-            <h2 id="h6">Reach Me</h2><br>
-
-			 <a href="ContactMe.html" class="contact-button">Contact Me</a><br><br>
-        </div>
-		<br>
-		<p style="text-align: center;">After you've visited the 'Contact Me' page, wait a few seconds until the contact form loads.</p>
-		
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <a href="https://github.com/randulaberugoda" target="_blank"><i class="fa fa-github"> </i></a>
-                <a href="https://www.linkedin.com/in/randula-berugoda-487789282" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100009059867026&mibextid=gik2fB" target="_blank"><i class="fa fa-facebook"></i></a>   
-            </div><br>
-            <div class="copy"><p>Copyright © 2024 Randula Berugoda || CodeX. All rights reserved.</p></div>
-        </div>
+      <div class="social-icons">
+        <a href="https://github.com/randulaberugoda" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/randula-berugoda" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://randulaberugoda.netlify.app" target="_blank" title="Linktree"><i class="fas fa-link"></i></a>
+        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Copyright © 2024 Randula Berugoda || CodeX. All rights reserved.</p>
     </footer>
+  </div>
 
-    <script>
- document.addEventListener("DOMContentLoaded", function() {
-    const educationItems = document.querySelectorAll(".education-item");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            } else {
-                entry.target.classList.remove("visible"); 
-            }
-        });
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
     });
-    educationItems.forEach(item => {
-        observer.observe(item);
+
+    // Add scroll effect to navigation
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.style.background = 'rgba(255, 255, 255, 0.98)';
+      } else {
+        nav.style.background = 'rgba(255, 255, 255, 0.95)';
+      }
     });
-});
 
+    // Add intersection observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
 
-    </script>
-	<script>
-  window.addEventListener('resize', function() {
-    var paragraph = document.querySelector('.about-content p');
-    if (window.innerWidth <= 600) {
-      paragraph.innerHTML = "Hi!!!..<br>I'm an Undergraduate student at SLIIT City Uni faculty of Computing.<br><br>Feel free to explore my portfolio to learn more about my projects and experiences.<br><br>Thank you for visiting.";
-    } else {
-      paragraph.innerHTML = "Hi !!!..<br>I'm an Undergraduate student at SLIIT City Uni faculty of Computing.<br><br>Feel free to explore my portfolio to learn more about my projects and experiences.<br><br>I am always open to new opportunities and collaborations that allow me to expand my knowledge.<br><br>Thank you for visiting, and I look forward to connecting with fellow enthusiasts, learners, and industry professionals.";
-    }
-  });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
 
-  
-  window.dispatchEvent(new Event('resize'));
-</script>
-	
+    // Observe all cards and skill items
+    document.querySelectorAll('.card, .skill-item').forEach(item => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(item);
+    });
+  </script>
 </body>
+
 </html>
