@@ -167,6 +167,7 @@ nav {
 }
 
 /* Cards */
+/* Cards */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -184,6 +185,9 @@ nav {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -193,7 +197,7 @@ nav {
 }
 
 .card h3 {
-  color: #f46cc0;
+  color: #274C77;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
@@ -203,8 +207,43 @@ nav {
   margin-bottom: 0.5rem;
 }
 
+/* Buttons inside card */
+.card-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-buttons a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.github-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.github-btn:hover {
+  background-color: #555;
+}
+
+.docs-btn {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.docs-btn:hover {
+  background-color: #16a085;
+}
+
+
 /* Skills Section */
-/* Skills Section */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -298,6 +337,39 @@ nav {
   z-index: 1;
 }
 
+.fa-figma {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("https://cdn.worldvectorlogo.com/logos/figma-1.svg") no-repeat center;
+  background-size: contain;
+}
+
+.fa-intellij {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("https://cdn.worldvectorlogo.com/logos/intellij-idea-1.svg") no-repeat center;
+  background-size: contain;
+}
+/* Flutter */
+.fa-flutter {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("https://cdn.worldvectorlogo.com/logos/flutter.svg") no-repeat center;
+  background-size: contain;
+}
+
+/* Dart */
+.fa-dart {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("https://cdn.worldvectorlogo.com/logos/dart.svg") no-repeat center;
+  background-size: contain;
+}
+
 /* Contact Section */
 .contact-section {
   text-align: center;
@@ -320,6 +392,18 @@ nav {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(244, 108, 192, 0.4);
 }
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
 
 /* Footer - Fixed to remove extra space */
 footer {
