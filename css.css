@@ -352,7 +352,6 @@ nav {
   background: url("https://cdn.worldvectorlogo.com/logos/intellij-idea-1.svg") no-repeat center;
   background-size: contain;
 }
-/* Flutter */
 .fa-flutter {
   display: inline-block;
   width: 40px;
@@ -360,8 +359,6 @@ nav {
   background: url("https://cdn.worldvectorlogo.com/logos/flutter.svg") no-repeat center;
   background-size: contain;
 }
-
-/* Dart */
 .fa-dart {
   display: inline-block;
   width: 40px;
@@ -376,22 +373,68 @@ nav {
   padding: 4rem 2rem;
 }
 
-.contact-btn {
-  display: inline-block;
-  background: linear-gradient(45deg, #f46cc0, #3d7cf1);
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 10px 30px rgba(244, 108, 192, 0.3);
+
+/* conatact form */
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-.contact-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(244, 108, 192, 0.4);
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
 }
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #1167b1;
+  box-shadow: 0 0 8px rgba(17, 103, 177, 0.3);
+  outline: none;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #1167b1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: #0e4f88;
+  transform: translateY(-2px);
+}
+
+
 .skill-item {
   display: flex;
   flex-direction: column;
