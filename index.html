@@ -179,7 +179,6 @@
             <i class="custom fa-flutter"></i>
             <h4>Flutter</h4>
           </div>
-
           <div class="skill-item">
             <i class="custom fa-dart"></i>
             <h4>Dart</h4>
@@ -202,10 +201,20 @@
 
       <!-- Contact Section -->
       <section class="contact-section" id="contact">
-        <h2>Let's Connect</h2><br>
-        <a href="ContactMe.html" class="contact-btn">Contact Me</a>
+        <h2>Let's Connect !</h2><br>
+
+        <form id="contact-form" method="POST">
+          <label>Your email:<input type="email" name="email" required></label>
+          <label>Your message:<textarea name="message" required></textarea></label>
+
+          <button type="submit">Send</button>
+        </form>
+        <p id="form-status" style="display:none;"></p>
+
       </section>
     </div>
+
+
 
     <!-- Footer -->
     <footer>
@@ -216,7 +225,7 @@
         <a href="https://randulaberugoda.netlify.app" target="_blank" title="Linktree"><i class="fas fa-link"></i></a>
         <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
-      <p>Copyright © 2024 Randula Berugoda || CodeX. All rights reserved.</p>
+      <p>Copyright © 2024 Randula Berugoda • CodeX. All rights reserved.</p>
     </footer>
   </div>
 
@@ -267,8 +276,41 @@
       item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
       observer.observe(item);
     });
+
+    // Form submission handling
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      try {
+        let response = await fetch("https://formspree.io/f/xkgvkyeg", {
+          method: "POST",
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+
+        if (response.ok) {
+          status.style.display = "block";
+          status.style.color = "green";
+          status.innerText = "Message sent!";
+          form.reset();
+        } else {
+          status.style.display = "block";
+          status.style.color = "red";
+          status.innerText = "❌ Oops! Something went wrong.";
+        }
+      } catch (error) {
+        status.style.display = "block";
+        status.style.color = "red";
+        status.innerText = "❌ Network error. Try again later.";
+      }
+    });
   </script>
+
 </body>
 
 </html>
-
